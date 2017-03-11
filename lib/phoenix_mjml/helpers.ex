@@ -1,4 +1,4 @@
-defmodule Mjml.Helpers do
+defmodule PhoenixMjml.Helpers do
 
   defmacro left >>> right do
     quote do

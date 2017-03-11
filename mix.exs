@@ -1,8 +1,8 @@
-defmodule Mjml.Mixfile do
+defmodule PhoenixMjml.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :mjml,
+    [app: :phoenix_mjml,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
@@ -28,7 +28,6 @@ defmodule Mjml.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:phoenix, "~> 1.3.0-rc"},
-     {:uuid, "~> 1.1"}]
+    []
   end
 end

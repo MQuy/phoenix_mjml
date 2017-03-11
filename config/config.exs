@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :mjml, key: :value
+#     config :phoenix_mjml, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:mjml, :key)
+#     Application.get_env(:phoenix_mjml, :key)
 #
 # Or configure a 3rd-party app:
 #

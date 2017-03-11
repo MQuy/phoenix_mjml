@@ -1,9 +1,9 @@
-defmodule Mjml.Engine do
+defmodule PhoenixMjml.Engine do
   @behaviour Phoenix.Template.Engine
 
-  import Mjml.Helpers
+  import PhoenixMjml.Helpers
 
-  def compile(path, _) do
+  def compile(path, _name) do
     path
     |> generate_html_path
     |> compile_content

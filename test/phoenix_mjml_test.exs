@@ -1,6 +1,6 @@
-defmodule MjmlTest do
+defmodule PhoenixMjmlTest do
   use ExUnit.Case
-  doctest Mjml
+  doctest PhoenixMjml
 
   test "the truth" do
     assert 1 + 1 == 2
