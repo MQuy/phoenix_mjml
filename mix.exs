@@ -3,17 +3,11 @@ defmodule PhoenixMjml.Mixfile do
 
   def project do
     [app: :phoenix_mjml,
-     version: "0.1.0",
-     elixir: "~> 1.2",
+     version: "0.0.2",
+     elixir: "~> 1.4",
      deps: deps(),
-     package: [
-       maintainers: ["MQuy"],
-       licenses: ["MIT"],
-       links: %{github: "https://github.com/MQuy/phoenix_mjml"}
-     ],
-     description: """
-     Phoenix Template Engine for Mjml
-     """]
+     package: package(),
+     description: description()]
   end
 
   def application do
@@ -21,8 +15,22 @@ defmodule PhoenixMjml.Mixfile do
   end
 
   defp deps do
-    [{:phoenix, "~> 1.2"},
-     {:phoenix_html, "~> 2.3"},
-     {:uuid, "~> 1.1"}]
+    [{:phoenix, "~> 1.3.0-rc"},
+     {:phoenix_html, "~> 2.6"},
+     {:uuid, "~> 1.1"},
+     {:ex_doc, "~> 0.14", only: :dev, runtime: false}]
+  end
+
+  defp description do
+    """
+    Phoenix Template Engine for Mjml
+    """
+  end
+
+  defp package do
+    [name: :phoenix_mjml,
+     maintainers: ["MQuy"],
+     licenses: ["MIT"],
+     links: %{github: "https://github.com/MQuy/phoenix_mjml"}]
   end
 end
