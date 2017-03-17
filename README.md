@@ -1,5 +1,8 @@
 # Phoenix Template Engine for Mjml
 
+[![License][deps-img]][deps]
+[![License][license-img]][license]
+
 > Powered by [Mjml](https://mjml.io/)
 
 
@@ -11,10 +14,10 @@
      `{:phoenix_mjml, github: "chrismccord/phoenix_mjml"}`
   2. Add the following to your Phoenix `config/config.exs`
 
-     ```elixir
-    config :phoenix, :template_engines,
-      mjml: PhoenixMjml.Engine
-     ```
+ ```elixir
+  config :phoenix, :template_engines,
+    mjml: PhoenixMjml.Engine
+ ```
   3. Use the `.html.mjml` extensions for your templates.
 
 ## Optional
@@ -31,3 +34,13 @@ Add mjml extension to Phoenix live reload in `config/dev.exs`
       ]
     ]
 ```
+
+## License
+
+MIT license. Please see [LICENSE][license] for details.
+
+[deps-img]: https://beta.hexfaktor.org/badge/all/github/dailydrip/firestorm.svg
+[deps]: https://beta.hexfaktor.org/github/dailydrip/firestorm
+[license-img]: http://img.shields.io/badge/license-MIT-brightgreen.svg
+[license]: http://opensource.org/licenses/MIT
+[LICENSE]: https://github.com/MQuy/phoenix_mjml
