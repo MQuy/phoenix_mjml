@@ -4,7 +4,6 @@ defmodule PhoenixMjml.Engine do
   import PhoenixMjml.Helpers
 
   def compile(path, _name) do
-    path
     case System.cmd("mjml", [path, "-s"]) do
       {html, 0} -> EEx.compile_string(html, engine: Phoenix.HTML.Engine, line: 0)
       _         -> raise "Error MJML exited with non zero status"
