@@ -1,8 +1,6 @@
 defmodule PhoenixMjml.Engine do
   @behaviour Phoenix.Template.Engine
 
-  import PhoenixMjml.Helpers
-
   def compile(path, _name) do
     case System.cmd("mjml", [path, "-s"]) do
       {html, 0} -> EEx.compile_string(html, engine: Phoenix.HTML.Engine, line: 0)
