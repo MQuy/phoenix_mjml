@@ -8,7 +8,7 @@
 
 ## Usage
 
-  1. Add `{:phoenix_mjml, "~> 0.2.0"}` to your deps in `mix.exs`.
+  1. Add `{:phoenix_mjml, "~> 0.2.1"}` to your deps in `mix.exs`.
      If you generated your app from the Phoenix master branch,
      add phoenix_mjml's master branch to your deps instead.
      `{:phoenix_mjml, github: "chrismccord/phoenix_mjml"}`
